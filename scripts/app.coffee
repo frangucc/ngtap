@@ -16,7 +16,7 @@ Tapcentive.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpP
       templateUrl: 'menu.html'
 
     .state 'app.home',
-      url: '/home'
+      url: '/'
       views:
         menuContent:
           controller: 'HomeCtrl'
@@ -99,7 +99,7 @@ Tapcentive.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpP
           controller: 'DocCtrl'
           templateUrl: 'docs/show.html'
 
-    $urlRouterProvider.otherwise "/home"
+    $urlRouterProvider.otherwise "/"
 
     $httpProvider.interceptors.push ->
        request: (config) ->
