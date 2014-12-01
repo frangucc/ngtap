@@ -1,0 +1,48 @@
+nav.top-bar.show-for-small(data-topbar='', role='navigation')
+  ul.title-area
+    li.name
+      h1
+        a(href='#') Tapcentive
+    // Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+    li.toggle-topbar
+      a(href='index.html#/beacon-ble-nfc-connected-touchpoint')
+        span More â†’
+nav.top-bar.hide-for-small(data-topbar='')
+  ul.title-area(style='margin-left:5%;')
+    li.name
+      h1(style='margin-top:16px;')
+        a(href='index.html')
+          img(src='./img/logo_d.png', style='', width='130px;')
+  section.top-bar-section(style='')
+    ul.right
+      li.has-dropdown.not-click
+        a(href='index.html#/beacon-ble-nfc-connected-touchpoint') Platform
+        ul.dropdown
+          li.title.back.js-generated
+            h5
+              a(href='javascript:void(0)') Back
+          li(style='background-color:#fff !important;')
+            a(href='index.html#/beacon-ble-nfc-mobile-api-sdk') Mobile SDK
+          li(style='background-color:#fff !important;')
+            a(href='index.html#/tapcentive-beacon-nfc-cloud-manager') Tapcentive Manager   
+          li(style='background-color:#fff !important;')
+            a(href='index.html#/beacon-ble-nfc-connected-touchpoint') Touchpoint
+      li.has-dropdown.not-click
+        a(href='index.html#/about') About
+        ul.dropdown
+          li.title.back.js-generated
+            h5
+              a(href='javascript:void(0)') Back
+          li(style='background-color:#fff !important;')
+            a(href='index.html#/about#who-we-are') Who We Are
+          li(style='background-color:#fff !important;')
+            a(href='index.html#/about#team') Our Team
+          li(style='background-color:#fff !important;')
+            a(href='index.html#/press#top') Press
+      li.has-dropdown
+        a(href='index.html#/blog') Blog
+      li
+        a(href='index.html#/contact') Contact
+nav.hide-for-small(style='float:right;margin:-10px 50px 40px 0;')
+  .small
+    a(href='https://manager.tapcentive.com/') Sign In

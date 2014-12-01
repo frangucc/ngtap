@@ -1,0 +1,38 @@
+section#main-content(style='background-color: #efefef; margin-top: -100px; margin-bottom: -40px; padding: 180px; min-height: 800px;')
+		.row.centered-text
+			.large-12.columns
+				h1 Register for access to Tapcentive
+				br
+				h3 To help you get up and running with Tapcentive, fill out this form so we can follow up with the next steps.
+				br
+				br
+				br
+				meta(http-equiv='Content-type', content='text/html; charset=UTF-8')
+				form(action='https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8', method='POST')
+					input(type='hidden', name='oid', value='00D70000000dNJQ')
+					input(type='hidden', name='retURL', value='http://tapcentive.com')
+					div(style='width: 500px; margin-left: 19%;')
+						label(for='first_name', style='color: #000; float: left;') First Name
+						input#first_name(maxlength='40', name='first_name', size='20', type='text')
+						br
+						label(for='last_name', style='color: #000; float: left;') Last Name
+						input#last_name(maxlength='80', name='last_name', size='20', type='text')
+						br
+						label(for='email', style='color: #000; float: left;') Email
+						input#email(maxlength='80', name='email', size='20', type='text')
+						br
+						label(for='company', style='color: #000; float: left;') Company
+						input#company(maxlength='40', name='company', size='20', type='text')
+						br
+						input.button(type='submit', name='submit')
+			.row
+				.large-12.columns.centered-text(style='margin-top: 80px;')
+					ul(style='list-style: none; margin-left: -2%;')
+						li
+							a(href='mailto:info@tapcentive.com?Subject=Hello', target='_top') info@tapcentive.com
+						li
+							a(href='mailto:support@tapcentive.com?Subject=Hello%20Support', target='_top') support@tapcentive.com
+						li
+							a(href='mailto:careers@tapcentive.com?Subject=Hello%20Careers', target='_top') careers@tapcentive.com
+						li
+							a(href='twitter.com/tapcentive') @tapcentive
