@@ -1,1 +1,11 @@
+/www/*.html
+/www/desktop
+/www/tablet
+/www/mobile
+/www/css
+/www/js
+/platforms/
+/plugins/
 /.sass-cache
+
+.DS_Store
