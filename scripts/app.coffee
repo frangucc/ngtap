@@ -10,7 +10,7 @@ else
 Tapcentive.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) ->
   $stateProvider
     .state 'app',
-      url: '/app'
+      url: ''
       abstract: true
       controller: 'AppCtrl'
       templateUrl: 'menu.html'
