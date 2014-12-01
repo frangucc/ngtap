@@ -2,7 +2,8 @@
 /www/desktop
 /www/tablet
 /www/mobile
-/www/css
+/www/css/app*
+/www/css/ionic*
 /www/js
 /platforms/
 /plugins/
