@@ -9,73 +9,97 @@ else
 
 Tapcentive.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) ->
   $stateProvider
-    .state 'pages',
-      url: '/'
-      controller: 'HomeCtrl'
-      templateUrl: 'home.html'
-
-    .state 'docs',
-      url: '/docs'
-      controller: 'DocsCtrl'
-      templateUrl: 'docs/index.html'
-
     .state 'app',
-      url: '/'
+      url: '/app'
       abstract: true
       controller: 'AppCtrl'
       templateUrl: 'menu.html'
 
-    .state 'about',
+    .state 'app.pages',
+      url: '/home'
+      views:
+        menuContent:
+          controller: 'HomeCtrl'
+          templateUrl: 'home.html'
+
+    .state 'app.docs',
+      url: '/docs'
+      views:
+        menuContent:
+          controller: 'DocsCtrl'
+          templateUrl: 'docs/index.html'
+
+    .state 'app.about',
       url: '/about'
-      controller: 'AboutCtrl'
-      templateUrl: 'about.html'
+      views:
+        menuContent:
+          controller: 'AboutCtrl'
+          templateUrl: 'about.html'
 
-    .state 'how',
+    .state 'app.how',
       url: '/how'
-      controller: 'HowCtrl'
-      templateUrl: 'how.html'
+      views:
+        menuContent:
+          controller: 'HowCtrl'
+          templateUrl: 'how.html'
     
-    .state 'platform-touchpoints',
+    .state 'app.platform-touchpoints',
       url: '/beacon-ble-nfc-connected-touchpoint'
-      controller: 'PlatformTouchpointCtrl'
-      templateUrl: 'platform-touchpoints.html'
+      views:
+        menuContent:
+          controller: 'PlatformTouchpointCtrl'
+          templateUrl: 'platform-touchpoints.html'
 
-    .state 'platform-mobile',
+    .state 'app.platform-mobile',
       url: '/beacon-ble-nfc-mobile-api-sdk'
-      controller: 'PlatformMobileCtrl'
-      templateUrl: 'platform-mobile.html'
+      views:
+        menuContent:
+          controller: 'PlatformMobileCtrl'
+          templateUrl: 'platform-mobile.html'
 
-    .state 'platform-manager',
+    .state 'app.platform-manager',
       url: '/tapcentive-beacon-nfc-cloud-manager'
-      controller: 'PlatformManagerCtrl'
-      templateUrl: 'platform-manager.html'
+      views:
+        menuContent:
+          controller: 'PlatformManagerCtrl'
+          templateUrl: 'platform-manager.html'
 
-    .state 'blog',
+    .state 'app.blog',
       url: '/blog'
-      controller: 'BlogCtrl'
-      templateUrl: 'blog.html'
+      views:
+        menuContent:
+          controller: 'BlogCtrl'
+          templateUrl: 'blog.html'
 
-    .state 'press',
+    .state 'app.press',
       url: '/press'
-      controller: 'PressCtrl'
-      templateUrl: 'press.html'
+      views:
+        menuContent:
+          controller: 'PressCtrl'
+          templateUrl: 'press.html'
 
-    .state 'contact',
+    .state 'app.contact',
       url: '/contact'
-      controller: 'ContactCtrl'
-      templateUrl: 'contact.html'
+      views:
+        menuContent:
+          controller: 'ContactCtrl'
+          templateUrl: 'contact.html'
 
-    .state 'doc',
+    .state 'app.doc',
       url: '/docs/:permalink'
-      controller: 'DocCtrl'
-      templateUrl: 'docs/show.html'
+      views:
+        menuContent:
+          controller: 'DocCtrl'
+          templateUrl: 'docs/show.html'
 
-    .state 'step',
+    .state 'app.step',
       url: '/docs/:permalink/:step'
-      controller: 'DocCtrl'
-      templateUrl: 'docs/show.html'
+      views:
+        menuContent:
+          controller: 'DocCtrl'
+          templateUrl: 'docs/show.html'
 
-    $urlRouterProvider.otherwise "/"
+    $urlRouterProvider.otherwise "/home"
 
     $httpProvider.interceptors.push ->
        request: (config) ->
@@ -92,7 +116,7 @@ Tapcentive.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpP
          config
 
 Tapcentive.run ($state) ->
-  $state.go('docs')
+  $state.go('app.docs')
 
 Tapcentive.factory 'Socket', (socketFactory) ->
   socketFactory()
