@@ -103,7 +103,7 @@ Tapcentive.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpP
 
     $httpProvider.interceptors.push ->
        request: (config) ->
-         if config.url.match(/\.html$/)
+         if config.url.match(/\.html$/) && !config.url.match(/^shared\//)
            if device.tablet()
              type = 'tablet'
            else if device.mobile()
