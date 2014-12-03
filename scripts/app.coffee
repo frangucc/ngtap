@@ -118,6 +118,9 @@ Tapcentive.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpP
 Tapcentive.run ($state) ->
   $state.go('app.home')
 
+Tapcentive.run ($rootScope, copy) ->
+  $rootScope.copy = copy
+
 Tapcentive.factory 'Socket', (socketFactory) ->
   socketFactory()
 
