@@ -1,7 +1,7 @@
 section#about-hero(style='margin-top: -140px;height:450px')
     .row
         .large-12.columns
-            h1 We're <strong>tapping</strong> into the future
+          h1(ng-bind-html='copy.about.heading')
 section#main-content
 .row(style='padding: 10px 90px;')
   .large-12
@@ -130,4 +130,3 @@ section#main-content
             .clear
               p
                 | Graham likes to say that he has learned, used, and forgotten more computing languages than you have fingers and toes. If you've ever opened a JPEG, unpacked a Zipfile, or watched HDTV, Graham's handiwork is in there. His journey has taken him through work in big corporations, start-ups and everything in between, including Sophos, ActiveState, and SocialText.
-            

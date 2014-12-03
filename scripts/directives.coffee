@@ -1,16 +1,27 @@
-angular.module("tap.directives", []).directive("device", ->
-  directiveDefinitionObject =
+angular.module("tap.directives", [])
+  .directive "device", ->
     restrict: "A"
     link: ->
       device.init()
-      return
 
-  directiveDefinitionObject
-).directive "snapscroll", ->
-  directiveDefinitionObject =
+  .directive "snapscroll", ->
     restrict: "A"
     link: ->
       device.init()
-      return
 
-  directiveDefinitionObject
+  .service 'copy', ($sce) ->
+    copy =
+      about:
+        heading: "We're <strong>tapping</strong> into the future"
+
+    trustValues = (values) ->
+      _.each values, (val, key) ->
+        switch typeof(val)
+          when 'string'
+            $sce.trustAsHtml(val)
+          when 'object'
+            trustValues(val)
+
+    trustValues(copy)
+
+    copy

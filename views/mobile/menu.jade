@@ -1,33 +1,42 @@
 ion-side-menus
   ion-pane(ion-side-menu-content)
+    header.bar.bar-header
+      button.button.button-icon(ng-click='sideMenuController.toggleLeft()')
+        i.icon.ion-navicon
 
-    ion-nav-bar.bar-stable.nav-title-slide-ios7(back-button-type='button-icon' back-button-icon='ion-ios7-arrow-back')
+      ion-nav-buttons(side="left")
+        ion-nav-back-button.button-clear
+          i.icon.ion-ios7-arrow-back
+          | Back
 
-    ion-nav-view(name='menuContent', animation='slide-left-right')
+      h1.title Tapcentive
+
+    ion-nav-view(name='menuContent' animation='slide-left-right')
 
   ion-side-menu(side='left')
-    header.bar.bar-header.bar-stable
-      h1.title(style='color:#000 !important;') Tapcentive
-      
+
+    header.bar.bar-stable
+      h1.title Menu
+
     ion-content.has-header
-      ion-list
-        ion-item(nav-clear='', menu-close='', href='#/home')
+      .list
+        a.item(menu-close href='#/home')
           | Home
 
-        ion-item(nav-clear='', menu-close='', href='#/how')
+        a.item(menu-close href='#/how')
           | How it Works
 
-        ion-item(nav-clear='', menu-close='', href='#/beacon-ble-nfc-mobile-api-sdk')
+        a.item(menu-close href='#/beacon-ble-nfc-mobile-api-sdk')
           | Mobile SDK
 
-        ion-item(nav-clear='', menu-close='', href='#/beacon-ble-nfc-connected-touchpoint')
+        a.item(menu-close href='#/beacon-ble-nfc-connected-touchpoint')
           | Touchpoints
 
-        ion-item(nav-clear='', menu-close='', href='#/tapcentive-beacon-nfc-cloud-manager')
+        a.item(menu-close href='#/tapcentive-beacon-nfc-cloud-manager')
           | Cloud Manager
 
-        ion-item(nav-clear='', menu-close='', href='#/about')
+        a.item(menu-close href='#/about')
           | About
 
-        ion-item(nav-clear='', menu-close='', href='#/contact')
+        a.item(menu-close href='#/contact')
           | Contact

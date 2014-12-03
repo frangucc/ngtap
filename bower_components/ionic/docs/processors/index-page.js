@@ -12,13 +12,22 @@ module.exports = {
     currentVersion = config.get('currentVersion');
     contentsFolder = config.get('rendering.contentsFolder');
   },
-  process: function(docs) {
+  process: function(docs, config) {
     docs.push({
       docType: 'index-page',
       id: 'index-page',
       currentVersion: currentVersion,
       template: 'index.template.html',
-      outputPath: contentsFolder + '/index.md'
+      outputPath: contentsFolder + '/api/index.md'
     });
+    if (config.get('versionData').latest.name !== currentVersion) {
+      docs.push({
+        docType: 'index-page',
+        id: 'index-page',
+        currentVersion: currentVersion,
+        template: 'index.template.html',
+        outputPath: contentsFolder + '/api/index.md'
+      });
+    }
   }
 };

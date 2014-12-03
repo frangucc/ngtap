@@ -1,91 +1,87 @@
 ion-view(title='Contact Us', style='background-color:#efefef;')
-    ion-nav-buttons(side='left')
-        button.button.button-icon.icon.ion-navicon(menu-toggle='left')
-      ion-content(padding='true', scroll='true')
-        div(ng-controller='HomepageCtrl')
-          section(style='background-color:#efefef;margin:-60px 0 0px 0;padding:40px 0 100px 0;')
-            .row
-              .large-12.text-left(style='margin-left:5%;')
-                img(src='./img/order@2x.png', style='max-width:80%;margin-left:5%;')
-                br
-                h1
-                  strong We&apos;re in Beta!
-                  |  
-                  br
-                  | Register for our 
-                  br
-                  |  developer preview.
-                br
-                h3
-                  | We&rsquo;re now accepting applications for our public beta.
-                  br
-                  br
-                  |  Apply below and we&rsquo;ll follow-up with information how to obtain touchpoints and access to our entire platform.
-              br
-              br
-              br
-              br
-          section#main-content(style='background-color:#141c26;margin:-20px;padding:40px;')
-            .row.left-text
-              .large-12.columns
-                h2(style='color:#fff !important;') First, a little bit about you.
-                | &#x9;&#x9;
-                h5(style='color:#fff !important;')
-                  | We&apos;ll notify you by email as soon as our next batch of Connected Touchpoints are ready to ship.
-                | &#x9;&#x9;
-                br
-                br
-                br
-            .row
-              .large-6.columns.supporticons(style='text-align:left;')
-                // ----------------------------------------------------------------------
-                // NOTE: Please add the following <META> element to your page <HEAD>.
-                // If necessary, please modify the charset parameter to specify the
-                // character set of your HTML page.
-                // ----------------------------------------------------------------------
-                meta(http-equiv='Content-type', content='text/html; charset=UTF-8')
-                // ----------------------------------------------------------------------
-                // NOTE: Please add the following <FORM> element to your page.
-                // ----------------------------------------------------------------------
-                form(action='https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8', method='POST')
-                  input(type='hidden', name='oid', value='00D70000000dNJQ')
-                  | &#x9;&#x9;&#x9;
-                  input(type='hidden', name='retURL', value='http://tapcentive.com')
-                  // ----------------------------------------------------------------------
-                  // NOTE: These fields are optional debugging elements. Please uncomment
-                  // these lines if you wish to test in debug mode.
-                  // <input type="hidden" name="debug" value=1>
-                  // <input type="hidden" name="debugEmail" value="tim@tapcentive.com">
-                  // ----------------------------------------------------------------------
-                  label(for='first_name', style='color:#fff;') First Name
-                  input#first_name(maxlength='40', name='first_name', size='20', type='text')
-                  br
-                  | &#x9;&#x9;&#x9;
-                  label(for='last_name', style='color:#fff;') Last Name
-                  input#last_name(maxlength='80', name='last_name', size='20', type='text')
-                  br
-                  | &#x9;&#x9;&#x9;
-                  label(for='email', style='color:#fff;') Email
-                  input#email(maxlength='80', name='email', size='20', type='text')
-                  br
-                  | &#x9;&#x9;&#x9;
-                  label(for='company', style='color:#fff;') Company
-                  input#company(maxlength='40', name='company', size='20', type='text')
-                  br
-                  | &#x9;&#x9;&#x9;
-                  input.button(type='submit', name='submit')
-              | &#x9;&#x9;
-              | &#x9;&#x9;
-              | &#x9;&#x9;
-              .row.centered-text.headspace-20
-                .large-12.columns
-                  br
-                  br
-                  br
-                  br
-                  br
-                  br
-                  | &#x9;&#x9;
-                  a.hide-for-small(href='index.html#/beacon-ble-nfc-connected-touchpoint') Learn more about the Connected Touchpoint &rarr;
-                  | &#x9;&#x9;
-                  br
+  ion-content(padding='true', scroll='true')
+    section(style='background-color:#efefef;margin:-60px 0 0px 0;padding:40px 0 100px 0;')
+      .row
+        .large-12.text-left(style='margin-left:5%;')
+          img(src='./img/order@2x.png', style='max-width:80%;margin-left:5%;')
+          br
+          h1
+            strong We&apos;re in Beta!
+            br
+            | Register for our
+            br
+            |  developer preview.
+          br
+          h3
+            | We&rsquo;re now accepting applications for our public beta.
+            br
+            br
+            |  Apply below and we&rsquo;ll follow-up with information how to obtain touchpoints and access to our entire platform.
+        br
+        br
+        br
+        br
+    section#main-content(style='background-color:#141c26;margin:-20px;padding:40px;')
+      .row.left-text
+        .large-12.columns
+          h2(style='color:#fff !important;') First, a little bit about you.
+          | &#x9;&#x9;
+          h5(style='color:#fff !important;')
+            | We&apos;ll notify you by email as soon as our next batch of Connected Touchpoints are ready to ship.
+          | &#x9;&#x9;
+          br
+          br
+          br
+      .row
+        .large-6.columns.supporticons(style='text-align:left;')
+          // ----------------------------------------------------------------------
+          // NOTE: Please add the following <META> element to your page <HEAD>.
+          // If necessary, please modify the charset parameter to specify the
+          // character set of your HTML page.
+          // ----------------------------------------------------------------------
+          meta(http-equiv='Content-type', content='text/html; charset=UTF-8')
+          // ----------------------------------------------------------------------
+          // NOTE: Please add the following <FORM> element to your page.
+          // ----------------------------------------------------------------------
+          form(action='https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8', method='POST')
+            input(type='hidden', name='oid', value='00D70000000dNJQ')
+            | &#x9;&#x9;&#x9;
+            input(type='hidden', name='retURL', value='http://tapcentive.com')
+            // ----------------------------------------------------------------------
+            // NOTE: These fields are optional debugging elements. Please uncomment
+            // these lines if you wish to test in debug mode.
+            // <input type="hidden" name="debug" value=1>
+            // <input type="hidden" name="debugEmail" value="tim@tapcentive.com">
+            // ----------------------------------------------------------------------
+            label(for='first_name', style='color:#fff;') First Name
+            input#first_name(maxlength='40', name='first_name', size='20', type='text')
+            br
+            | &#x9;&#x9;&#x9;
+            label(for='last_name', style='color:#fff;') Last Name
+            input#last_name(maxlength='80', name='last_name', size='20', type='text')
+            br
+            | &#x9;&#x9;&#x9;
+            label(for='email', style='color:#fff;') Email
+            input#email(maxlength='80', name='email', size='20', type='text')
+            br
+            | &#x9;&#x9;&#x9;
+            label(for='company', style='color:#fff;') Company
+            input#company(maxlength='40', name='company', size='20', type='text')
+            br
+            | &#x9;&#x9;&#x9;
+            input.button(type='submit', name='submit')
+        | &#x9;&#x9;
+        | &#x9;&#x9;
+        | &#x9;&#x9;
+        .row.centered-text.headspace-20
+          .large-12.columns
+            br
+            br
+            br
+            br
+            br
+            br
+            | &#x9;&#x9;
+            a.hide-for-small(href='index.html#/beacon-ble-nfc-connected-touchpoint') Learn more about the Connected Touchpoint &rarr;
+            | &#x9;&#x9;
+            br
