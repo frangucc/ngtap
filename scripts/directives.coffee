@@ -9,7 +9,7 @@ angular.module("tap.directives", [])
     link: ->
       device.init()
 
-  .factory 'copy', ($sce) ->
+  .service 'copy', ($sce) ->
     copy =
       about:
         heading: "We're <strong>tapping</strong> into the future"

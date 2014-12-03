@@ -1,5 +1,5 @@
 if device.desktop()
-  window.Tapcentive = angular.module('Tapcentive', ['ui.router', 'btford.socket-io', 'tap.controllers', 'tap.directives'])
+  window.Tapcentive = angular.module('Tapcentive', ['ngSanitize', 'ui.router', 'btford.socket-io', 'tap.controllers', 'tap.directives'])
 
 else
   window.Tapcentive = angular.module("Tapcentive", [ "ionic", "btford.socket-io", "tap.controllers", 'tap.directives'])
