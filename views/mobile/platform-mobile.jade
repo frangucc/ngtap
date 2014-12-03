@@ -39,57 +39,49 @@ style.
       color: #b6d600;
       text-decoration: none !important;
       }
-      
+
 ion-tabs.tabs-positive.tabs-icon-only
   ion-tab(title='Home', icon-on='ion-ios7-home', icon-off='ion-ios7-home-outline')
     style.
       .pane {
       background-color:#b7da06 !important;
       }
-    |   
+    |
     ion-view.homepage-hero(title='Mobile SDK')
-      ion-nav-buttons(side='left')
-        button.button.button-icon.icon.ion-navicon(menu-toggle='left')
-      |   
-      |     
-      div(ng-controller='HomepageCtrl')
-        h1(style='margin-top:-8%;font-size:2.2em !important')
-          | Pre-built Incentives 
-          br
-          strong(style='')  Out of the Box 
+      h1(style='margin-top:-8%;font-size:2.2em !important')
+        | Pre-built Incentives
         br
-        |       
-        h3(style='font-size:1.8em;')
-          a(href='', style='          font-size:.7em !important;padding-top:20px;color:#fff;') Use Tabs Below to Learn More
-        |       
-        |       
-        |       
-        img(src='./img/box-phone-alt@2x.png', style='margin-top:0%;')
-  |   
+        strong(style='')  Out of the Box
+      br
+      |
+      h3(style='font-size:1.8em;')
+        a(href='', style='          font-size:.7em !important;padding-top:20px;color:#fff;') Use Tabs Below to Learn More
+      |
+      |
+      |
+      img(src='./img/box-phone-alt@2x.png', style='margin-top:0%;')
+  |
   ion-tab(title='About', icon-on='ion-ios7-glasses', icon-off='ion-ios7-glasses-outline')
     style.
       .pane {
       background-color:#b7d400 !important;
       }
-    |     
+    |
     ion-view.homepage-hero(title='Tacpentive')
-      ion-nav-buttons(side='left')
-        button.button.button-icon.icon.ion-navicon(menu-toggle='left')
-      |   
       ion-content(padding='true', scroll='true')
-        div(style='font-size:.7em;', ng-controller='HomepageCtrl')
-          div(style='font-size:.7em;', ng-controller='HomepageCtrl')
+        div(style='font-size:.7em;')
+          div(style='font-size:.7em;')
             h2(style='text-align:center;') Mobile SDK Summary
-            |  
-            |        
+            |
+            |
             img(src='./img/phone-callouts@2x.png', style='margin-top:5%;margin-left:0%', width='100%')
-            |       
-            |       
+            |
+            |
             h3
               ul(style='text-align:left;list-style:disc;margin-left:10%')
                 h5(style='margin-left:-5%;padding-top:10%;')
                   strong With the Mobile SDK, you can:
-                |         
+                |
                 li  Integrate your app quickly and seamlessly
                 li  Deliver fun and immersive mobile experiences
                 li  Customize look and feel of app pages
@@ -104,57 +96,54 @@ ion-tabs.tabs-positive.tabs-icon-only
             <img src="./img/graph_2@2x.jpg" style="position:relative;right:0%;" /><br /><br /><br />
             </ion-slide>
             </ion-slide-box
-  |   
+  |
   ion-tab(title='Settings', icon-on='ion-ios7-more', icon-off='ion-ios7-more-outline')
     style.
       .pane {
       background-color:#efefef !important;
       }
-    |     
+    |
     ion-view.homepage-hero(title='Tacpentive')
-      ion-nav-buttons(side='left')
-        button.button.button-icon.icon.ion-navicon(menu-toggle='left')
-      |   
       ion-content(padding='true', scroll='true')
         div(style='font-size:.7em;')
           h2(style='text-align:center;')
             strong Kick-ass
             |  brandable templates
-          |  
-          |        
+          |
+          |
           .large-4.columns.text-cenetered
             img(src='./img/mobile-graphic2.jpg')
-        |  
+        |
         br
-        |  
+        |
         br
-        |  
+        |
         br
-        |     
+        |
         hr.headspace40
-        |      
+        |
         div(style='font-size:.7em;')
           h2(style='text-align:center;') Integrate our SDK in your iOS &amp; Android app
-          |  
-          |        
+          |
+          |
           .large-4.columns.text-cenetered
             img(src='./img/sdk_screen@2x.png')
-        |     
+        |
         br
-        |  
+        |
         br
-        |  
+        |
         br
-        |     
+        |
         hr.headspace40
-        |      
+        |
         div(style='font-size:.7em;')
           h2(style='text-align:center;') Programmatically interact with the SDK
-          |  
-          |        
+          |
+          |
           .large-4.columns.text-cenetered
             img(src='./img/fragment@2x.png')
-        |     
+        |
         br
         br
         br
