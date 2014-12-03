@@ -6,8 +6,7 @@ ion-view(title='About', style='background-color:#efefef;')
           .large-9.push-3.columns
             h1(style='color:#202a39 !important' ng-bind-html='copy.about.heading')
             a(name='who-we-are')
-            h3
-              | Tapcentive was created by a team that has lived the mobile commerce revolution from the earliest days of mCommerce with WAP, to leading the charge in mobile payments and services with NFC worldwide.
+            h3(ng-bind-html='copy.about.sub_heading')
               br
               br
             h6

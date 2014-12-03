@@ -13,6 +13,15 @@ angular.module("tap.directives", [])
     copy =
       about:
         heading: "We're <strong>tapping</strong> into the future"
+        sub_heading: "Tapcentive was created by a team that has lived the mobile commerce revolution from the earliest days of mCommerce with WAP, to leading the charge in mobile payments and services with NFC worldwide."
+        copy: "<p>For us, mobile commerce has always been about much more than payment:  marketing, promotions, product content, and loyalty, all come to life inside a mobile phone. Mobile commerce really gets interesting when it bridges the digital and physical worlds.</p><p>Our goal at Tapcentive is to create a state-of-the-art mobile engagement platform that enables marketers and developers to create entirely new customer experiences in physical locations – all with a minimum amount of technology development.</p><p>We think you’ll like what we’ve built so far. And just as mobile technology is constantly evolving, so is the Tapcentive platform. Give it a test drive today.</p>"
+      team:
+        heading: "A tight knit team with a rich history of launching products together"
+        bios:
+          dave_role: "<h5>Dave Wentker<br />CEO</h5><br />"
+          dave_copy: "<p>Dave oversees all aspects of Tapcentive with a focus on the company’s product and commercialization strategies.  Dave has over 25 years of high tech product development and management experience within the IT, Payments, and Mobile industries.  He spent 16 years at Visa where he led global product and corporate strategy teams in digital and mobile commerce.</p>"
+    
+
 
     trustValues = (values) ->
       _.each values, (val, key) ->
