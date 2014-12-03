@@ -1,8 +1,8 @@
 if device.desktop()
-  window.Tapcentive = angular.module('Tapcentive', ['ui.router', 'btford.socket-io'])
+  window.Tapcentive = angular.module('Tapcentive', ['ui.router', 'btford.socket-io', 'tap.controllers', 'tap.directives'])
 
 else
-  window.Tapcentive = angular.module("Tapcentive", [ "ionic", "btford.socket-io", "tap.controllers"])
+  window.Tapcentive = angular.module("Tapcentive", [ "ionic", "btford.socket-io", "tap.controllers", 'tap.directives'])
     .run ($ionicPlatform) ->
       $ionicPlatform.ready ->
         StatusBar.styleDefault() if window.StatusBar
@@ -42,7 +42,7 @@ Tapcentive.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpP
         menuContent:
           controller: 'HowCtrl'
           templateUrl: 'how.html'
-    
+
     .state 'app.platform-touchpoints',
       url: '/beacon-ble-nfc-connected-touchpoint'
       views:
@@ -178,7 +178,3 @@ Tapcentive.controller 'DocCtrl', ($scope, $sce, $stateParams, $timeout, Docs) ->
   $scope.hasMoreSteps = ->
     if $scope.step
       $scope.step.index < $scope.doc.steps.length
-
-
-
-
