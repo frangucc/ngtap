@@ -1,10 +1,11 @@
 //colors
-$color_regal_blue_approx: #074e68
+$regal: #074e68
 $color_shark_approx: #242424
 $gallery: #efefef
 $color_rio_grande_approx: #b7d400
 $white: #fff
 $black: #000
+$dark_blue: #202b39
 
 //fonts
 $font_0: Montserrat
@@ -14,11 +15,10 @@ $font_3: (sans-serif !important)
 $font_4: Roboto
 $font_5: (serif !important)
 
-
 //colors
 $gallery: #efefef
 $color_ebony_clay_approx: #202b39
-$black:  black
+$black:  #000
 $color_pear_approx: #d2db31
 $color_trout_approx: #474e5d
 $white: #fff
@@ -27,7 +27,6 @@ $color_calypso_approx: #256d84
 //fonts
 $font_0: Roboto
 $font_1: (sans-serif !important)
-
 
 nav
   .small
@@ -140,7 +139,7 @@ a.button
 
 
 #manager-hero 
-  background: url(../img/user-laptop.jpg) $color_regal_blue_approx
+  background: url(../img/user-laptop.jpg) $regal
   background-size: cover
   background-repeat: no-repeat
   height: 340px
@@ -170,66 +169,6 @@ a.button
 
 .foot-cta-btn 
   background: $gallery !important
-
-#about-hero 
-  background: #b6d600
-  background-size: cover
-  height: 300px
-  h1 
-    font-size: 4em
-    color: $white
-    text-align: left
-    font-weight: 700
-    margin-bottom: 0
-    text-align: center
-    letter-spacing: -3px
-    font-family: $font_2, $font_3
-    //If you use compass, instead of the line below you could use +text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-    text-shadow: 0 1px $black
-    padding: 10% 0
-
-
-.homepage-hero 
-  background-color: $gallery
-  background-size: cover
-  min-height: 600px
-  .row 
-    padding: 10px 0 20px
-
-  h1 
-    font-size: 4em !important
-    margin: 0 auto
-    color: $white
-    text-align: left
-    font-weight: 700
-    margin-bottom: 0
-    letter-spacing: -3px
-    line-height: 100%
-    font-family: $font_2, $font_3
-    padding: 10% 0 0
-
-  h4 
-    font-size: 1.35em
-    color: $white
-    font-weight: 300
-
-  h3 
-    color: $white
-    text-align: left
-    font-family: $font_4, $font_5
-    font-size: 1.4rem
-
-  .floatingphone img 
-    max-width: 30%
-    position: absolute
-    right: 100px
-    top: 30px
-
-  .floatingctp img 
-    position: absolute
-    right: 0
-    top: 50px
-
 
 .ctp-hero 
   background-color: $color_rio_grande_approx
@@ -269,40 +208,178 @@ a.button
 
 // mobile specific styles - may want to break out later
 
-.homepage-hero-mobile h1 
-  font-size: 4em !important
-  margin: 0 auto
-  color: $white !important
-  text-align: left
-  font-weight: 700
-  margin-bottom: 0
-  letter-spacing: -3px
-  line-height: 100%
-  font-family: $font_2, $font_3
-  padding: 10% 0 0
 
-.mobile-home-panels
-  .pane
-    background-color: #efefef !important
+// start official HTML/CSS Francke Jones bia bia
+
+body > ng-include > ion-nav-view > div > ion-pane > header
+  background-color: transparent !important
+  border: 0px solid black !important
+
+
+
+// all the sets of desktop and mobile pages in pairs below
+
+// home page - web and mobile
+#page-home 
+  background-color: #efefef
+  margin: -80px 0 0px 0
+  padding: 40px 0 0 0
+  background-size: cover
+  min-height: 600px
+  .row 
+    padding: 10px 0 20px
+
+  h1 
+    font-size: 4em !important
+    margin: 0 auto
+    color: $white
+    text-align: left
+    font-weight: 700
+    margin-bottom: 0
+    letter-spacing: -3px
+    line-height: 100%
+    font-family: $font_2, $font_3
+    padding: 10% 0 0
+
+  h4 
+    font-size: 1.35em
+    color: $white
+    font-weight: 300
+
+  h3 
+    color: $white
+    text-align: left
+    font-family: $font_4, $font_5
+    font-size: 1.4rem
+    font-family: Helvetica, Roboto, Arial, 'sans-serf'
+
+  .floatingphone img 
+    max-width: 30%
+    position: absolute
+    right: 100px
+    top: 30px
+
+  .floatingctp img 
+    position: absolute
+    top: 50px
+    margin-top: 4%
+    padding-left: 20%
+    max-width: 85%
+    right: 0%
+    overflow: hidden
+
+#boxes-home
+  margin-top: -4%
+  background-color: #efefef
+  padding-bottom: 40px
+  .boxyfoxy
+    span
+      font-weight: 900
+
+#main-content
+  .centered-text
+    a
+      margin: 20px 0 20px 0
+
+.slider-pager
+  margin-top:40px !important
 
 .mobile-home-heros
-  font-size: .7em
-  .tabs
-    background-color: #000 !important
-    border: 0px solid black !important
+  h1 
+    font-size: 3em !important
+    margin: 40px 0 0 0
+    color: $dark_blue !important
+    text-align: left
+    font-weight: 700
+    letter-spacing: -3px
+    line-height: 100%
+    font-family: $font_2, $font_3
+    padding: 10% 0 0
+  li
+    font-size: 14px !important
 
-  .title
-    color: #202b39 !important
-    line-height: 2.8em !important
+// how page
 
-  h1
-    line-height: 1.1em !important
-    text-align: center !important
-    margin: 20px 0 0 0
+#page-how
+  img
+    .dot
+      text-align: center !important
 
+
+// about page
+#page-about
+  margin-top: -80px
+  height: 60%
+  background: #b6d600
+  background-size: cover
+  h1 
+    font-size: 4em
+    color: $white
+    text-align: left
+    font-weight: 700
+    margin-bottom: 0
+    text-align: center
+    letter-spacing: -3px
+    font-family: $font_2, $font_3
+    //If you use compass, instead of the line below you could use +text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 0 1px $black
+    padding: 10% 0
+
+#mast-about
   h3
-    text-align: center !important
-    font-size: 1.8em
+    margin-top: 5%
+    padding: 5%
+  p
+    padding: 20px 50px 0 50px
+  hr
+    margin: 60px 0 20px 0
 
-  .pane
-    background-color: #efefef !important
+#page-about-mobile
+  margin-top: 0px
+  background: #efefef
+  text-align: left
+  h1
+    padding-top: 50px
+
+#mast-about-mobile
+  background: #efefef
+
+
+#bios
+  h5
+    margin: 0px 0 10px 0
+    padding: 0px 0 10px 0
+    height: 20px
+  h3
+    margin-top: 0%
+    padding: 5%
+    text-align: center !important
+
+  .clear
+    padding: 120px 0 40px 0
+    float: clear
+
+// contact page
+#page-contact
+  background-color: $regal
+
+  p
+    color: $regal
+
+#form-contact
+  margin: 20px 0 0 0
+  text-align: center
+
+  label
+    text-align: left !important
+
+  .mobile
+    h2
+      color: $white !important
+    p
+      color: $white !important
+    label
+      color: $white !important
+      text-align: left !important
+
+// blog page

@@ -1,44 +1,16 @@
-ion-view(title='About', style='background-color:#efefef;')
+ion-view#page-about-mobile(title='')
   ion-content(padding='true', scroll='true')
-    div
-      section#main-content
-        .row(style='padding-top:40px;')
-          .large-9.push-3.columns
-            h1(style='color:#202a39 !important' ng-bind-html='copy.about.heading')
-            a(name='who-we-are')
-            h3(ng-bind-html='copy.about.sub_heading')
-              br
-              br
-            h6
-              | For us, mobile commerce has always been about much more than payment:  marketing, promotions, product content, and loyalty, all come to life inside a mobile phone.  And mobile commerce really gets interesting when mobile experiences become a part of physical commerce.
-              br
-              br
-              | Our goal at Tapcentive is to create a state-of-the-art mobile engagement platform that enables marketers and developers to create entirely new customers experiences in physical locations &ndash; all with the absolute minimum of technology development.
-              br
-              br
-              | We think you&rsquo;ll like what we&rsquo;ve built so far. And just as mobile technology is constantly evolving, so is the Tapcentive platform. Give it a test drive today.
-              p
-            img(src='./img/hardware-desk.jpg')
-            p
-            br
-            a(name='careers')
-            h3
-              | We&apos;re always looking for thought leaders
-              br
-              h6
-                | If you&apos;re passionate about this industry and looking for a change-up, send us your resume!
-            p Send resumes to tim@tapcentive.com.
-            br
-            br
-            a(name='press')
-            h3
-              | We&apos;ve been on the news!
-              br
-              h6
-            p PR Links go here
-    br
-    br
-    br
-    br
-    br
-    br
+    section
+      .row
+        .large-12.columns
+          h1(ng-bind-html='copy.about.heading')
+            
+    section#mast-about-mobile
+      .row
+        .large-12
+          a(name='who-we-are')
+          h3(ng-bind-html='copy.about.sub_heading')
+          div(ng-bind-html='copy.about.copy')
+          hr.headspace20
+
+    ng-include(src="'shared/bios.html'")

@@ -2475,7 +2475,7 @@ a.subdued {
   .bar.bar-stable {
     background-color: #f8f8f8;
     border-color: #b2b2b2;
-    background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+    background-image: none !important;
     color: #444; }
     .bar.bar-stable .title {
       color: #444; }
