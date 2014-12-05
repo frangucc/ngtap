@@ -1,137 +1,42 @@
-style
-  | .tabs {
-  |   background-color:#000 !important;
-  |   border:0px solid black !important;
-  |   }
-  |   .tabs-positive > .tabs, .tabs.tabs-positive {
-  |   background-image:none !important;
-  |   }
-  |   .title {
-  |   color:#202b39 !important;
-  |   line-height:2.8em !important;
-  |   }
-  |   h1 {
-  |   line-height:1.1em !important;
-  |   text-align:center !important;
-  |   letter-spacing: -1px !important;
-  |   }
-  |   h3 {
-  |   text-align:center !important;
-  |   }
-  |   a:hover, a:focus {
-  |   color: #ffdf23;
-  |   }
-  |   a:hover {
-  |   cursor: pointer;
-  |   }
-  |   a, button, :focus, a:focus, button:focus, a:active, a:hover {
-  |   outline: 0;
-  |   }
-  |   a:hover, a:focus {
-  |   color: #ffdf23;
-  |   }
-  |   a:hover {
-  |   cursor: pointer;
-  |   }
-  |   a:hover, a:focus {
-  |   color: #ffdf23;
-  |   text-decoration: underline;
-  |   }
-ion-tabs.tabs-positive.tabs-icon-only
-  ion-tab(title='Home', icon-on='ion-ios7-home', icon-off='ion-ios7-home-outline')
-    style
-      | .pane {
-      | background-color:#ffe226 !important;
-      | }
+ion-view#page-platform-mobile(style='background-color:#ffdd3e')
+  ion-content(padding='true', scroll='true', style='padding:0px;margin:0px;')
+    ion-slide-box
+      ion-slide(style='min-height:550px;')
+        .mobile-heros
+          h2 A 
+            strong complete 
+            | cloud based console for creating, managing, and measuring campaigns.
+          img(src='./img/box-manager@2x.png', width='100%', style='position:relative;right:0%;')
+      ion-slide
+        .mobile-heros
+          h2.centered-text Manager Summary
+          img(src='./img/gif/home_demo_tansparent.gif')
+          h3
+            ul(style='text-align:left;list-style:disc;margin-left:10%')
+              h5(style='margin-left:-5%;padding-top:0%;')
+                strong With the Tapcentive Manager, you can:
+              li Remotely manage touchpoints, campaigns, and locations
+              li Set campaign rules with a click
+              li Manage your custom campaign icons and assets
+              li Target segments, audiences and locations
+              li Get reports, insights and analytics
 
-    ion-view.homepage-hero(title='Cloud Management')
-      h1(style='font-size:2.2em !important')
-        | Remotely
-        br
-        | Manage it All
-        br
-        strong  From the Cloud
+      ion-slide
+        .mobile-heros.centered-text
+          h2 Design campaigns right from your desktop
+          img(src='img/gif/incentive_type.gif', width='100%')
 
-      br
+      ion-slide
+        .mobile-heros.centered-text
+          h2 Target audiences with differentiated content and mobile experiences
+          img(src='img/gif/audiences_real.gif', width='100%')
 
-      h3(style='font-size:1.8em;')
-        a(href='', style='\
-        font-size:.7em !important;padding-top:20px;color:#202b39;') Use Tabs Below to Learn More
+      ion-slide
+        .mobile-heros.centered-text
+          h2 Geotarget your customer with precise location-based campaigns
+          img(src='img/gif/target_locations.gif', width='100%')
 
-      img(src='./img/box-manager@2x.png', width='75%', style='position:relative;right:-27%;')
-
-  ion-tab(title='About', icon-on='ion-ios7-glasses', icon-off='ion-ios7-glasses-outline')
-    style.
-      | .pane {
-      | background-color:#ffdd3e !important;
-      | }
-
-    ion-view.homepage-hero(title='Tacpentive')
-      ion-content(padding='true', scroll='true')
-        div(style='font-size:.7em;')
-          div(style='font-size:.7em;')
-            h2(style='text-align:center;') Manager Summary
-
-            img(src='./img/gif/home_demo_mobile@2x.gif', style='margin-top:5%;margin-left:10%', width='80%')
-
-            h3
-              ul(style='text-align:left;list-style:disc;margin-left:10%')
-                h5(style='margin-left:-5%;padding-top:10%;')
-                  strong With the Cloud Manager, you can:
-
-                li Remotely manage Touchpoints, campaigns, and locations
-                li Determine campaign rules with a click
-                li Manage your custom campaign icons and assets
-                li Target segments, audiences, and locaitons
-                li Get reports, insights and analytics
-
-  ion-tab(title='Settings', icon-on='ion-ios7-more', icon-off='ion-ios7-more-outline')
-    style.
-      | .pane {
-      | background-color:#efefef !important;
-      | }
-
-    ion-view.homepage-hero(title='Tacpentive')
-      ion-content(padding='true', scroll='true')
-        div(style='font-size:.7em;')
-          h2(style='text-align:center;') Design campaigns right from your desktop:
-
-          .large-4.columns.text-cenetered
-            img(src='./img/gif/incentive_type.gif')
-
-            p
-              | Quickly create and deploy mobile campaigns such as simple coupons, rich content, sweepstakes, randomized rewards, and treasure hunts.
-        hr.headspace40
-
-        div(style='font-size:.7em;')
-          h2(style='text-align:center;') Target audiences with differentiated content and mobile experiences:
-
-          .large-4.columns.text-cenetered
-            img(src='./img/gif/audiences.gif')
-
-            p
-              | Connect with your best customers and offer them exclusive incentives that inspire loyalty.
-        hr.headspace40
-
-        div(style='font-size:.7em;')
-          h2(style='text-align:center;') Geotarget your customer with precise location-based campaigns:
-
-          .large-4.columns.text-cenetered
-            img(src='./img/gif/target_locations.gif', width='')
-
-            p
-              | Create and mange multiple areas within a location and target them with content and incentives.
-        hr.headspace40
-
-        div(style='font-size:.7em;')
-          h2(style='text-align:center;') Track app activations, tap engagements, incentive ditribution and redemptions
-
-          .large-4.columns.text-cenetered
-            img(src='img/reports.png', width='100%')
-
-        br
-        br
-        br
-        br
-        br
-        br
+      ion-slide
+        .mobile-heros.centered-text
+          h2 Track app activations, tap engagements, incentive ditribution, and redemptions
+          img(src='img/gif/report.gif', width='100%')

@@ -1,38 +1,39 @@
-ion-view.homepage-hero
-  ion-content(padding='true', scroll='true')
+ion-view#page-platform-mobile(style='background-color:#b7d400')
+  ion-content(padding='true', scroll='true', style='padding:0px;margin:0px;')
     ion-slide-box
-      ion-slide
-        .mobile-home-heros
-          h1 Pre-built 
-            br 
-            | Incentives
-            br
-            strong Out of the Box
+      ion-slide(style='min-height:550px;')
+        .mobile-heros
+          h2 Ready-to-roll iOS &amp; Android SDKs packed with embedded experiences that make integration easy.
           img(src='./img/box-phone-alt@2x.png')
       ion-slide
-        .mobile-home-heros
-          h2(style='text-align:center;') Mobile SDK Summary
-            img(src='./img/phone-callouts@2x.png', style='margin-top:5%;margin-left:0%', width='100%')
-            h3
-              ul(style='text-align:left;list-style:disc;margin-left:10%')
-                h5(style='margin-left:-5%;padding-top:10%;')
-                  strong With the Mobile SDK, you can:
-                li  Integrate your app quickly and seamlessly
-                li  Deliver fun and immersive mobile experiences
-                li  Customize look and feel of app pages
-                li  Receive real-time tap and location events
-                li  Link your customer records to tap data
+        .mobile-heros
+          h2.centered-text Mobile SDK Summary
+          img(src='./img/phone-callouts@2x.png', style='margin-top:5%;margin-left:0%', width='100%')
+          h3
+            ul(style='text-align:left;list-style:disc;margin-left:10%')
+              h5(style='margin-left:-5%;padding-top:10%;')
+                strong With the Mobile SDK, you can:
+              li  Integrate your app quickly and seamlessly
+              li  Deliver fun and immersive mobile experiences
+              li  Customize look and feel of app pages
+              li  Receive real-time tap and location events
+              li  Link your customer records to tap data
       ion-slide
-        h2(style='text-align:center;') Integrate our SDK in your iOS &amp; Android app
-          .large-4.columns.text-cenetered
-            img(src='./img/sdk_screen@2x.png')
+        .mobile-heros.centered-text
+          h2 Bring your app to life with amazing embedded experiences
+          br
+          img(src='./img/mo.gif', width='50%')
 
       ion-slide
-        h2(style='text-align:center;')
-            strong Kick-ass
-            |  brandable templates
-          .large-4.columns.text-cenetered
-            img(src='./img/mobile-graphic2.jpg')
+        .mobile-heros.centered-text
+          h2 Our SDK securely integrates your App with the Tapcentive platform
+          img(src='img/sdk_screen@2x.png', width='100%')
+
+      ion-slide
+        .mobile-heros.centered-text
+          h2 Programmatically interact with the SDK
+          img(src='img/fragments.jpg', width='100%')
+          p Receive real-time tap events that interact with your CRM, Loyalty, &amp; Ordering engines
 
 
 
